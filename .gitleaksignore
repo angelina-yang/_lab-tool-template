@@ -1,0 +1,9 @@
+# Gitleaks allowlist for this repo.
+# Add fingerprints here for known false positives.
+# Format: <full-40-char-commit-sha>:<file-path>:<rule-id>:<line-number>
+#
+# Example:
+# ebe31795197af8607fe4efef4b22b4a88843903f:docs/notes.md:linkedin-client-id:38
+#
+# To find a fingerprint: run `gitleaks detect --report-format json --report-path /tmp/gl.json`
+# then look at the "Fingerprint" field in /tmp/gl.json.

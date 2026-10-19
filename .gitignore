@@ -1,0 +1,63 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Build output
+.next/
+out/
+build/
+dist/
+
+# Testing
+coverage/
+
+# Env files — NEVER commit (secret-scanning line-of-defense)
+.env
+.env.local
+.env.*.local
+.env.pulled
+.env*.pulled
+
+# Secrets (OAuth JSONs, service account keys, credentials)
+*client_secret*
+*.client_secret.json
+*credentials*.json
+*service-account*.json
+secrets/
+.secrets/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vercel
+.vercel/
+
+# Private planning docs (gitignored per TwoSetAI house rule)
+PROJECT.md
+COSTS.md
+FEATURE_*.md
+
+# Local uploads during dev (Vercel Blob is used in prod)
+local-uploads/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
